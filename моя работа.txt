@@ -1,0 +1,34 @@
+import java.util.Random;
+import java.util.Scanner;
+public class StepTracker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int steps = 1000;//ориентировочные шаги за день
+        int day = random.nextInt();//день выбранный пользователем
+        int month = random.nextInt(); //месяц выбранный пользователем
+        while (true) {
+            System.out.println("Выберите одно из действий по выбору");
+            System.out.println("1 - Ввести количество шагов за определённый день выберите от 1-го дня до 7-го");
+            System.out.println("2 - Напечатать статистику за определённый месяц(выберите от 1-го до 12-го) ");
+            System.out.println("3 - Изменить цель по количеству шагов в день ");
+            System.out.println("4 - Выйти из приложения");
+            int command = random.nextInt();
+
+            if (command == 1) { // считываем колличество шагов в день
+                System.out.println("day * steps");
+
+            } else if (command == 2) {
+                System.out.println("month + (steps * 30 ");
+
+            } else if (command == 3) {
+                System.out.println("Измените цель по количеству шагов в день");
+
+            } else if (command == 4) {
+                System.out.println("Выйти из приложения");
+            }
+            break;
+        }
+    }
+}
